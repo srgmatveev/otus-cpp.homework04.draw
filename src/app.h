@@ -34,77 +34,31 @@
  *
  */
 
-#ifdef USE_X11
-#include<X11/Xlib.h>
-#include <X11/Xutil.h>
-#endif
 
 #include <mutex>
-
-
 #include "utils.h"
 #include "mdi.h"
-class App {
-    friend class Application;
-    static std::shared_ptr<mdi> createMDI()
-    {
-        return mdiFactory::Create();
-    }
+class App{
 public:
-    App();
-    std::shared_ptr<mdi> getMDI() {return _mdi;}
-    virtual ~App();
-#ifdef USE_X11
-    Display* get_display() {return display;}
-#endif
+    static App& instance() {
+        static App instance;
+        return instance;
+    }
+    void run(){
+        Logger::Instance().info("Begin of showing Splash screen");
+        Logger::Instance().info("Load plugins");
+        mdi::instance().init();
+        Logger::Instance().info("End of showing Splash screen");
+    }
+
+    void App_Dispatcher(Message _message){
+        mdi::instance().Dispatcher(_message);
+    }
+
 private:
+    App() = default;
     App(const App &) = delete;
     App(App &&rhs) = delete;
     App &operator=(const App &) = delete;
+ };
 
-#ifdef USE_X11
-    Display *display;
-#endif
-    std::shared_ptr<mdi> _mdi{nullptr};
-
-};
-
-class Application {
-public:
-    static bool alreadyCreated;
-
-     static std::unique_ptr<App> run() {
-        static std::mutex mutex;
-        std::lock_guard<std::mutex> lock(mutex);
-        if (alreadyCreated)
-            throw msg_exception("Only one instance app can exist in program");
-        alreadyCreated = true;
-        return std::make_unique<App>();
-    }
-
-};
-
-bool Application::alreadyCreated = false;
-
-App::App() {
-#ifdef USE_X11
-    display = XOpenDisplay(NULL);
-    if (!display) {
-        std::string ss = std::string("Cannot connect to X server ") + std::string(getenv("DISPLAY"));
-        std::cerr << ss <<std::endl;
-        throw msg_exception(ss);
-    }
-#endif
-_mdi = App::createMDI();
-
-}
-
-App::~App(){
-
-#ifdef USE_X11
-    if(display) {
-        XCloseDisplay(display);
-        display = nullptr;
-    }
-#endif
-}

@@ -7,20 +7,13 @@
 #include "app.h"
 #include "mdi.h"
 
+#include "Shapes.h"
 int main() {
-#ifdef USE_X11
-    std::cout << "use x 11" << std::endl;
-#endif
-    std::cout << "hello" << std::endl;
+App::instance().run();
+App::instance().App_Dispatcher(Message::New_Document);
+App::instance().App_Dispatcher(Message::New_Document);
+App::instance().App_Dispatcher(Message::Set_Active_Document);
+App::instance().App_Dispatcher(Message::DrawLine);
 
-    std::unique_ptr<App> app = Application::run();
-
-    std::shared_ptr<mdi> mdi = app->getMDI();
-
-#ifdef USE_X11
-    mdi->set_display(app->get_display());
-    mdi->mdi_show_window();
-    #endif
-getchar();
-    return 0;
+return 0;
 }

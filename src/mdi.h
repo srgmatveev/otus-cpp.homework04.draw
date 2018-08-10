@@ -1,106 +1,78 @@
-//
-// Created by sergio on 09.08.18.
-//
 
 #pragma once
+
 #include <mutex>
 #include <memory>
-
-#ifdef USE_X11
-#include<X11/Xlib.h>
-#include <X11/Xutil.h>
-#endif
+#include <vector>
+#include <algorithm>
+#include "utils.h"
+#include "document.h"
+#include "dispatch_message.h"
 
 class mdi {
-    friend class mdiFactory;
 public:
-    explicit mdi() = default;
-#ifdef USE_X11
-    void set_display(Display *d){ display = d;}
-    Window create_simple_window(Display* display, int width, int height, int x, int y);
-    void mdi_show_window();
-#endif
-private:
-    mdi(const mdi &) = delete;
-    mdi(mdi &&rhs) = delete;
-    mdi &operator=(const mdi&) = delete;
-#ifdef USE_X11
-    Display* display;   /* pointer to X Display structure.*/
-   int screen_num;  /* number of screen to place the window on.*/
-   Window win; /* pointer to the newly created window.*/
-   unsigned int display_width, display_height; /* height and width of the X display.*/
-   unsigned int win_width,
-   win_height;  /* height and width for the new window.*/
-
-#endif
-};
-
-
-class mdiFactory{
-public:
-    static bool createMDI;
-    static std::shared_ptr<mdi> Create(){
-        std::mutex mutex;
-        std::lock_guard<std::mutex> lock_guard(mutex);
-        if(createMDI) return nullptr;
-        createMDI = true;
-        return std::make_shared<mdi>();
+    static mdi &instance() {
+        static mdi instance;
+        return instance;
     }
+
+    void init() {
+        Logger::Instance().info("Initialization Multi Document Interface");
+    }
+
+    void Dispatcher(Message, size_t);
+
+    std::shared_ptr<Document> find_document_by_id(const size_t &);
+
+private:
+    mdi() = default;
+
+    mdi(const mdi &) = delete;
+
+    mdi(mdi &&rhs) = delete;
+
+    mdi &operator=(const mdi &) = delete;
+
+    std::shared_ptr<Document> Active_Document{nullptr};
+    std::vector<std::shared_ptr<Document>> documents;
 };
 
-bool mdiFactory::createMDI = false;
 
-
-#ifdef USE_X11
-/*
-* function: create_simple_window. Creates a window with a white background
-*
- in the given size.
-* input:
- display, size of the window (in pixels), and location of the window
-*
- (in pixels).
-* output:
- the window's ID.
-* notes:
- window is created with a black border, 2 pixels wide.
-*
- the window is automatically mapped after its creation.
-*/
-Window mdi::create_simple_window(Display* display, int width, int height, int x, int y)
-{
-    int screen_num = DefaultScreen(display);
-    int win_border_width = 2;
-    Window win;
-/* create a simple window, as a direct child of the screen's */
-/* root window. Use the screen's black and white colors as
- */
-/* the foreground and background colors of the window,
- */
-/* respectively. Place the new window's top-left corner at
- */
-/* the given 'x,y' coordinates.
- */
-    win = XCreateSimpleWindow(display, RootWindow(display, screen_num),
-                              x, y, width, height, win_border_width,
-                              BlackPixel(display, screen_num),
-                              WhitePixel(display, screen_num));
-/* make the window actually appear on the screen. */
-    XMapWindow(display, win);
-/* flush all pending requests to the X server. */
-    XFlush(display);
-    return win;
+void mdi::Dispatcher(Message _message, size_t= 0) {
+    switch (_message) {
+        case Message::New_Document: {
+            std::shared_ptr<Document> tmp_doc = docFactory::Create();
+            mdi::instance().Active_Document = tmp_doc;
+            mdi::instance().documents.emplace_back(tmp_doc);
+            Logger::Instance().info("Create document id=" + std::to_string(Active_Document->get_id()));
+        }
+            break;
+        case Message::Set_Active_Document: {
+            size_t id = 1;
+            auto item = find_document_by_id(id);
+            if (item) {
+                Active_Document = item;
+                Logger::Instance().info("Active document id=" + std::to_string(Active_Document->get_id()));
+            } else {
+                Logger::Instance().warn("Can't active document with id=" + std::to_string(id));
+            }
+        }
+            break;
+        case Message::DrawLine:
+        {
+            std::shared_ptr<IShape> line = std::make_shared<Line>(Point(1,1),Point(2,3));
+            Active_Document->Create_IShape(line);
+        }
+        break;
+        default:
+            break;
+    }
 }
 
-void mdi::mdi_show_window() {
-    /* get the geometry of the default screen for our display. */
-    screen_num = DefaultScreen(display);
-    display_width = DisplayWidth(display, screen_num);
-    display_height = DisplayHeight(display, screen_num);
-/* make the new window occupy 1/9 of the screen's size. */
-    win_width = (display_width/2);
-    win_height = (display_height/2);
-    win = create_simple_window(display, win_width, win_height, 0, 0);
+std::shared_ptr<Document> mdi::find_document_by_id(const size_t &id) {
+    auto it = std::find_if(documents.cbegin(), documents.cend(), [&](std::shared_ptr<Document> const &p) {
+        return p->get_id() == id;});
 
+    if (it != documents.cend()) return *it;
+    else return nullptr;
 }
-#endif
