@@ -14,8 +14,12 @@ public:
 
     void set_file_name(const std::string &name) { _file_name = name; }
 
-    std::string& get_file_name() { return _file_name; }
+    std::string &get_file_name() { return _file_name; }
+
     void Create_IShape(std::shared_ptr<IShape>);
+
+    void Delete_Selected_IShape();
+
 private:
     size_t _document_id{0};
     static size_t counter;
@@ -32,8 +36,16 @@ Document::Document() {
 size_t Document::counter = 0;
 
 void Document::Create_IShape(std::shared_ptr<IShape> shape_ptr) {
+    shape_ptr->draw();
     Elements.emplace_back(shape_ptr);
-    Elements.at(0)->draw();
+}
+
+void Document::Delete_Selected_IShape() {
+
+    if (Elements.size() > 0) {
+        Logger::Instance().info(Elements.at(Elements.size() - 1)->string_info(true));
+        Elements.pop_back();
+    }
 }
 
 class docFactory {
@@ -42,3 +54,5 @@ public:
         return std::make_shared<Document>();
     }
 };
+
+

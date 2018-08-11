@@ -46,7 +46,7 @@ public:
     }
     void run(){
         Logger::Instance().info("Begin of showing Splash screen");
-        Logger::Instance().info("Load plugins");
+        Logger::Instance().info("Load plugins...");
         mdi::instance().init();
         Logger::Instance().info("End of showing Splash screen");
     }
