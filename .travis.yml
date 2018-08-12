@@ -16,8 +16,10 @@ addons:
     - doxygen
     - graphviz
 script:
-- export CC=gcc-7
-- export CXX=g++-7
+- export CC=/usr/bin/gcc-7
+- export CXX=/usr/bin/g++-7
+- sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 999 --slave /usr/bin/g++ g++ /usr/bin/g++-7
+- sudo update-alternatives --auto gcc
 # Check versions of gcc, g++ and cmake
 - gcc -v && g++ -v && cmake --version
 
@@ -53,7 +55,7 @@ deploy:
 - provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
-  keep-history: true
+  keep-history: false
   local_dir: ./build/docs/html
   on:
     branch: master
