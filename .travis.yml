@@ -57,3 +57,4 @@ deploy:
   local_dir: ./build/docs/html
   on:
     branch: master
+
