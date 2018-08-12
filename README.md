@@ -7,4 +7,4 @@
 
 Description | Link
 ------------|-------------
-Build status|[(https://travis-ci.org/srgmatveev/otus-cpp.homework05.draw.svg?branch=master)](https://travis-ci.org/srgmatveev/otus-cpp.homework05.draw)
+Build status|[![Build status](https://travis-ci.org/srgmatveev/otus-cpp.homework05.draw.svg?branch=master)](https://travis-ci.org/srgmatveev/otus-cpp.homework05.draw)
