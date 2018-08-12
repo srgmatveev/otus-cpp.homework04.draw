@@ -1,6 +1,7 @@
-//
-// Created by sergio on 09.08.18.
-//
+/**
+ * @file app.h
+ * @brief Класс работы с приложением
+ */
 #pragma #once
 
 /**
@@ -38,24 +39,40 @@
 #include <mutex>
 #include "utils.h"
 #include "mdi.h"
+/**
+ * @brief Класс-синглтон приложения
+ */
 class App{
 public:
+    /**
+     * @brief Ссылка на единственный экземпляр класса
+     * @return ссылку на единственны экземпляр класса
+     */
     static App& instance() {
         static App instance;
         return instance;
     }
+    /// Создание необходимых палитр, загрузка плагинов, инициализация mdi и т.д.
     void run(){
         Logger::Instance().info("Begin of showing Splash screen");
         Logger::Instance().info("Load plugins...");
         mdi::instance().init();
         Logger::Instance().info("End of showing Splash screen");
     }
-
+     /**
+     * @brief Контроллер приложения
+     * @param[in] _message - тип сообщения
+     */
     void App_Dispatcher(Message _message){
-        mdi::instance().Dispatcher(_message);
+        switch(_message) {
+            default:
+            mdi::instance().Dispatcher(_message);
+            break;
+        }
     }
 
 private:
+    /// Конструктор приложения по умолчанию
     App() = default;
     App(const App &) = delete;
     App(App &&rhs) = delete;

@@ -1,6 +1,3 @@
-//
-// Created by sergio on 09.08.18.
-//
 
 #include <iostream>
 #include <bits/unique_ptr.h>

@@ -1,4 +1,7 @@
-
+/**
+ * @file mdi.h
+ * @brief Multi document interface класс
+ */
 #pragma once
 
 #include <mutex>
@@ -8,19 +11,22 @@
 #include "utils.h"
 #include "document.h"
 #include "dispatch_message.h"
-
+/**
+ *  @brief Multi document interface класс синглтон
+ */
 class mdi {
 public:
+    /// Ссылка на единственный метод класса
     static mdi &instance() {
         static mdi instance;
         return instance;
     }
-
+    /// Инициализация mdi
     void init() {
         Logger::Instance().info("Initialization Multi Document Interface");
     }
 
-    void Dispatcher(Message, size_t);
+    void Dispatcher(Message);
 
     std::shared_ptr<Document> find_document_by_id(const size_t &);
 
@@ -48,9 +54,11 @@ private:
     std::shared_ptr<Document> Active_Document{nullptr};
     std::vector<std::shared_ptr<Document>> documents;
 };
-
-
-void mdi::Dispatcher(Message _message, size_t= 0) {
+/**
+ * @brief MDI контроллер
+ * @param[in] _message - тип сообщения
+ */
+void mdi::Dispatcher(Message _message) {
     switch (_message) {
         case Message::New_Document: {
             std::shared_ptr<Document> tmp_doc = docFactory::Create();
@@ -116,7 +124,11 @@ void mdi::Dispatcher(Message _message, size_t= 0) {
             break;
     }
 }
-
+/**
+    * @brief Найти документ по его id
+    * @param[in] id - уникальный идентификатор документа
+    * @return std::shared_ptr<Document> - указатель на документ
+    */
 std::shared_ptr<Document> mdi::find_document_by_id(const size_t &id) {
     auto it = std::find_if(documents.cbegin(), documents.cend(), [&](std::shared_ptr<Document> const &p) {
         return p->get_id() == id;
@@ -125,7 +137,9 @@ std::shared_ptr<Document> mdi::find_document_by_id(const size_t &id) {
     if (it != documents.cend()) return *it;
     else return nullptr;
 }
-
+/**
+ * @brief Импорт документа другого формата
+ */
 void mdi::Import_Document() {
     Logger::Instance().info("Import document from Adobe Illustrator");
     std::shared_ptr<Document> tmp_doc = docFactory::Create();
@@ -136,12 +150,16 @@ void mdi::Import_Document() {
     mdi::instance().documents.emplace_back(tmp_doc);
     Logger::Instance().info("Import ended and create document id = " + std::to_string(Active_Document->get_id()));
 }
-
+/**
+ * @brief Экспорт в документ формат другого графического редактора
+ */
 void mdi::Export_Active_Document() {
     if (Active_Document)
         Logger::Instance().info("Export active document to Corel Draw format.");
 }
-
+/**
+ * @brief Закрыть активный документ
+ */
 void mdi::Close_Active_Document() {
     if (!Active_Document) return;
 
@@ -154,7 +172,9 @@ void mdi::Close_Active_Document() {
 
     if (documents.size() > 0) Active_Document = documents.at(0);
 }
-
+/**
+ * @brief Закрыть все документы
+ */
 void mdi::Close_All_Documents() {
     if (!documents.size()) return;
     Logger::Instance().info("Begin close all documents...");
@@ -164,7 +184,9 @@ void mdi::Close_All_Documents() {
     }
     Logger::Instance().info("End close all documents...");
 }
-
+/**
+ * @brief Сохранить все документы
+ */
 void mdi::Save_All_Documents() {
     if (!documents.size()) return;
     Logger::Instance().info("Begin save all documents...");
@@ -174,7 +196,9 @@ void mdi::Save_All_Documents() {
     }
     Logger::Instance().info("End save all documents...");
 }
-
+/**
+ * @brief Загрузить документ
+ */
 void mdi::Open_Document() {
     std::shared_ptr<Document> tmp_doc = docFactory::Create();
     tmp_doc->set_file_name("Vector graphic document.mdr");
