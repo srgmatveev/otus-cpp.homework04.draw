@@ -12,7 +12,7 @@ project(${MY_PROJECT_NAME} VERSION ${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_P
 set(SRC_DIR "./src")
 include_directories(${SRC_DIR})
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp "${SRC_DIR}/mdi.cpp" "${SRC_DIR}/document.cpp")
 add_executable(${MY_PROJECT_NAME} ${SOURCE_FILES})
 
 set_target_properties(${MY_PROJECT_NAME}  PROPERTIES

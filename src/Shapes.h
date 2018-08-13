@@ -127,4 +127,37 @@ private:
     /// Радиус окружности
     size_t _radius;
 };
+/**
+ * @brief  Класс, рисующий квадрат 2D
+ */
+class Square: public Rectangle{
+public:
+    /// Конструктор, задающий координаты вершины, длину стороны и угол поворота квадрата
+    Square(const Point &top, const size_t &length, const __uint16_t &rotate = 0):
+            Rectangle(top, length, length, rotate), _top(top), _length(length), _angle(rotate){
 
+    }
+    /// Реализация метода для отображения прямоугольника на Canvas
+    void draw() override {
+        Logger::Instance().info(string_info());
+    }
+    /// Виртуальный деструктор
+    ~Square() override {}
+    /// Метод, выводящий информацию о квадрате
+    std::string string_info(bool del_flag = false) override {
+        std::ostringstream stream;
+        if (del_flag) stream << "Delete ";
+        else stream << "Draw ";
+        stream << "square from top {" << _top._x << ", " << _top._y << "} ";
+        stream << " with side length = " << _length << " and rotate angle = " << _angle;
+        return stream.str();
+    }
+private:
+    /// Структура, задающая вершину квадрата
+    Point _top{0, 0};
+    ///  Длина стороны квадрата
+    size_t _length{0};
+    /// Угол поворота квадрата
+    __uint16_t _angle{0};
+
+};

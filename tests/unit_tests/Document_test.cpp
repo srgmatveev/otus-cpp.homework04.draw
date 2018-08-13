@@ -1,5 +1,5 @@
 #include <gmock/gmock.h>
-#include "document.h"
+#include "document.cpp"
 
 using namespace testing;
 

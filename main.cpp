@@ -13,6 +13,7 @@ App::instance().App_Dispatcher(Message::Set_Active_Document);
 App::instance().App_Dispatcher(Message::DrawLine);
 App::instance().App_Dispatcher(Message::DrawCircle);
 App::instance().App_Dispatcher(Message::DrawRectangle);
+App::instance().App_Dispatcher(Message::DrawSquare);
 App::instance().App_Dispatcher(Message::DeleteSelected);
 App::instance().App_Dispatcher(Message::Import_From_File);
 App::instance().App_Dispatcher(Message::Export_to_File);

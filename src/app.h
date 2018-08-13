@@ -35,7 +35,6 @@
  *
  */
 
-
 #include <mutex>
 #include "utils.h"
 #include "mdi.h"

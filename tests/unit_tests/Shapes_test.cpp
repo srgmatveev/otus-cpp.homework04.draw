@@ -1,5 +1,6 @@
 #include <gmock/gmock.h>
 #include "Shapes.h"
+#include <string>
 using namespace testing;
 
 TEST(IShape_Test, IShape_Test_Correct_Shapes_Test){
@@ -18,4 +19,9 @@ TEST(IShape_Test, IShape_Test_Correct_Shapes_Test){
     str = line->string_info(false);
     ASSERT_EQ(str.substr(0,9),"Draw line");
     if(line) delete(line);
+
+    IShape *square = new Square(Point{5,6}, 9);
+    str = square->string_info(false);
+    ASSERT_EQ(str.substr(0,11),"Draw square");
+    if(square) delete(square);
 }
