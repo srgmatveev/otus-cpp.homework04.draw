@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>draw: Исходный файл src/utils.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">draw
+   &#160;<span id="projectnumber">версия =  0.0.14</span>
+   </div>
+   <div id="projectbrief">Otus C++ проект разработки прототипа векторного редактора.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">utils.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="utils_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="utils_8h.html#a51b2ba964e566948b7542e0c670e9bb9">   11</a></span>&#160;<span class="preprocessor">#define Interface class</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_logger.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_logger.html">Logger</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_logger.html#a133b07117fcd5c9eb0c811d7d4c60e52">   19</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_logger.html">Logger</a> &amp;<a class="code" href="class_logger.html#a133b07117fcd5c9eb0c811d7d4c60e52">Instance</a>() {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_logger.html">Logger</a> instance;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> instance;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_logger.html#ab4c4d86279176eb0ede726bc5b4d5ddb">   25</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_logger.html#ab4c4d86279176eb0ede726bc5b4d5ddb">info</a>(<span class="keyword">const</span> std::string &amp;message) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;\tinfo: &quot;</span> &lt;&lt; message &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_logger.html#a24b519e0f53e73937f93edd2da37ea76">   30</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_logger.html#a24b519e0f53e73937f93edd2da37ea76">warn</a>(<span class="keyword">const</span> std::string &amp;message) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        std::cerr &lt;&lt; <span class="stringliteral">&quot;warning: &quot;</span> &lt;&lt; message &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_logger.html#ac45b6ef7069b222c094da3724d1aa8fb">Logger</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_logger.html#ac45b6ef7069b222c094da3724d1aa8fb">Logger</a>(<span class="keyword">const</span> <a class="code" href="class_logger.html">Logger</a> &amp;root) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_logger.html#ac45b6ef7069b222c094da3724d1aa8fb">Logger</a>(<a class="code" href="class_logger.html">Logger</a> &amp;&amp;ths) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_logger.html">Logger</a> &amp;<a class="code" href="class_logger.html#a21dc953ea7e5c00656e75a2b4b7ec5cc">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_logger.html">Logger</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="ttc" id="class_logger_html"><div class="ttname"><a href="class_logger.html">Logger</a></div><div class="ttdoc">Класс синглтон для логирования. </div><div class="ttdef"><b>Definition:</b> utils.h:16</div></div>
+<div class="ttc" id="class_logger_html_ac45b6ef7069b222c094da3724d1aa8fb"><div class="ttname"><a href="class_logger.html#ac45b6ef7069b222c094da3724d1aa8fb">Logger::Logger</a></div><div class="ttdeci">Logger()=default</div><div class="ttdoc">Конструктор по умолчанию </div></div>
+<div class="ttc" id="class_logger_html_a133b07117fcd5c9eb0c811d7d4c60e52"><div class="ttname"><a href="class_logger.html#a133b07117fcd5c9eb0c811d7d4c60e52">Logger::Instance</a></div><div class="ttdeci">static Logger &amp; Instance()</div><div class="ttdoc">Ссылка на единственный экземпляр класса </div><div class="ttdef"><b>Definition:</b> utils.h:19</div></div>
+<div class="ttc" id="class_logger_html_ab4c4d86279176eb0ede726bc5b4d5ddb"><div class="ttname"><a href="class_logger.html#ab4c4d86279176eb0ede726bc5b4d5ddb">Logger::info</a></div><div class="ttdeci">void info(const std::string &amp;message)</div><div class="ttdoc">функция вывода информации </div><div class="ttdef"><b>Definition:</b> utils.h:25</div></div>
+<div class="ttc" id="class_logger_html_a21dc953ea7e5c00656e75a2b4b7ec5cc"><div class="ttname"><a href="class_logger.html#a21dc953ea7e5c00656e75a2b4b7ec5cc">Logger::operator=</a></div><div class="ttdeci">Logger &amp; operator=(const Logger &amp;)=delete</div><div class="ttdoc">Оператор присваивания запрещен </div></div>
+<div class="ttc" id="class_logger_html_a24b519e0f53e73937f93edd2da37ea76"><div class="ttname"><a href="class_logger.html#a24b519e0f53e73937f93edd2da37ea76">Logger::warn</a></div><div class="ttdeci">void warn(const std::string &amp;message)</div><div class="ttdoc">функция вывода сообщений в поток ошибок, на которые нужно обратить внимание </div><div class="ttdef"><b>Definition:</b> utils.h:30</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

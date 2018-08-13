@@ -1,0 +1,4 @@
+<map id="Square" name="Square">
+<area shape="rect" id="node2" href="$class_rectangle.html" title="Класс, рисующий прямоугольник 2D. " alt="" coords="5,96,85,123"/>
+<area shape="rect" id="node4" href="$struct_point.html" title="Структура для хранения 2D координат точки " alt="" coords="102,5,153,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node2" href="$class_circle.html" title="Класс, рисующий окружность 2D. " alt="" coords="131,5,187,32"/>
+<area shape="rect" id="node3" href="$class_line.html" title="Класс, рисующий линию 2D. " alt="" coords="135,56,182,83"/>
+<area shape="rect" id="node4" href="$class_rectangle.html" title="Класс, рисующий прямоугольник 2D. " alt="" coords="118,107,199,133"/>
+<area shape="rect" id="node5" href="$class_square.html" title="Класс, рисующий квадрат 2D. " alt="" coords="249,107,311,133"/>
+</map>

@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>draw: Исходный файл src/mdi.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">draw
+   &#160;<span id="projectnumber">версия =  0.0.14</span>
+   </div>
+   <div id="projectbrief">Otus C++ проект разработки прототипа векторного редактора.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">mdi.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mdi_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="utils_8h.html">utils.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="document_8h.html">document.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dispatch__message_8h.html">dispatch_message.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classmdi.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmdi.html">mdi</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classmdi.html#afb050755442efacc1269faba13225560">   21</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="classmdi.html">mdi</a> &amp;<a class="code" href="classmdi.html#afb050755442efacc1269faba13225560">instance</a>() {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">static</span> <a class="code" href="classmdi.html">mdi</a> <a class="code" href="classmdi.html#afb050755442efacc1269faba13225560">instance</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classmdi.html#afb050755442efacc1269faba13225560">instance</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classmdi.html#a87ccf5236251151db6c0f29c264fdde1">   27</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmdi.html#a87ccf5236251151db6c0f29c264fdde1">init</a>() {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="class_logger.html#a133b07117fcd5c9eb0c811d7d4c60e52">Logger::Instance</a>().<a class="code" href="class_logger.html#ab4c4d86279176eb0ede726bc5b4d5ddb">info</a>(<span class="stringliteral">&quot;Initialization Multi Document Interface&quot;</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmdi.html#a13585c878d33c005ed5340eea361639f">Dispatcher</a>(<a class="code" href="dispatch__message_8h.html#a4f09127c805cc1f5ee20e67db7b45efa">Message</a>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::shared_ptr&lt;Document&gt; <a class="code" href="classmdi.html#a97dbacae0d3aae15dc5a4d8a24b6f294">find_document_by_id</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> &amp;);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmdi.html#a94e9072c40842d832526257500a2d693">Import_Document</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmdi.html#a322abd1528a0101d5eea731a561865fb">Export_Active_Document</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmdi.html#aa9a57879a5ecfcfba470c593522ad64d">Close_Active_Document</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmdi.html#a2ba67bae133b42db67080b54ab084ada">Close_All_Documents</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmdi.html#ac2da889594cd3a15c4c58ea295a35b42">Save_All_Documents</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmdi.html#a52116908c0ec3d01fbea7af77768b1c9">Open_Document</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="classmdi.html#a038044d93cefd6758257b5784053c7ff">mdi</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="classmdi.html#a038044d93cefd6758257b5784053c7ff">mdi</a>(<span class="keyword">const</span> <a class="code" href="classmdi.html">mdi</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="classmdi.html#a038044d93cefd6758257b5784053c7ff">mdi</a>(<a class="code" href="classmdi.html">mdi</a> &amp;&amp;rhs) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="classmdi.html">mdi</a> &amp;operator=(<span class="keyword">const</span> <a class="code" href="classmdi.html">mdi</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classmdi.html#ae3620f0f57b8f802b4a41736321008b7">   81</a></span>&#160;    std::shared_ptr&lt;Document&gt; <a class="code" href="classmdi.html#ae3620f0f57b8f802b4a41736321008b7">Active_Document</a>{<span class="keyword">nullptr</span>};</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classmdi.html#ae3488f3990982f1411a29e733536fc91">   83</a></span>&#160;    std::vector&lt;std::shared_ptr&lt;Document&gt;&gt; <a class="code" href="classmdi.html#ae3488f3990982f1411a29e733536fc91">documents</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="ttc" id="classmdi_html_ac2da889594cd3a15c4c58ea295a35b42"><div class="ttname"><a href="classmdi.html#ac2da889594cd3a15c4c58ea295a35b42">mdi::Save_All_Documents</a></div><div class="ttdeci">void Save_All_Documents()</div><div class="ttdoc">Сохранить все документы </div><div class="ttdef"><b>Definition:</b> mdi.cpp:151</div></div>
+<div class="ttc" id="classmdi_html_a52116908c0ec3d01fbea7af77768b1c9"><div class="ttname"><a href="classmdi.html#a52116908c0ec3d01fbea7af77768b1c9">mdi::Open_Document</a></div><div class="ttdeci">void Open_Document()</div><div class="ttdoc">Загрузить документ </div><div class="ttdef"><b>Definition:</b> mdi.cpp:164</div></div>
+<div class="ttc" id="classmdi_html_a13585c878d33c005ed5340eea361639f"><div class="ttname"><a href="classmdi.html#a13585c878d33c005ed5340eea361639f">mdi::Dispatcher</a></div><div class="ttdeci">void Dispatcher(Message)</div><div class="ttdoc">MDI контроллер </div><div class="ttdef"><b>Definition:</b> mdi.cpp:11</div></div>
+<div class="ttc" id="classmdi_html_a038044d93cefd6758257b5784053c7ff"><div class="ttname"><a href="classmdi.html#a038044d93cefd6758257b5784053c7ff">mdi::mdi</a></div><div class="ttdeci">mdi()=default</div><div class="ttdoc">Пустой конструктор по умолчанию </div></div>
+<div class="ttc" id="classmdi_html_ae3620f0f57b8f802b4a41736321008b7"><div class="ttname"><a href="classmdi.html#ae3620f0f57b8f802b4a41736321008b7">mdi::Active_Document</a></div><div class="ttdeci">std::shared_ptr&lt; Document &gt; Active_Document</div><div class="ttdoc">Уазатель на докумен, который находится в фокусе </div><div class="ttdef"><b>Definition:</b> mdi.h:81</div></div>
+<div class="ttc" id="classmdi_html_afb050755442efacc1269faba13225560"><div class="ttname"><a href="classmdi.html#afb050755442efacc1269faba13225560">mdi::instance</a></div><div class="ttdeci">static mdi &amp; instance()</div><div class="ttdoc">Ссылка на единственный метод класса </div><div class="ttdef"><b>Definition:</b> mdi.h:21</div></div>
+<div class="ttc" id="classmdi_html_a2ba67bae133b42db67080b54ab084ada"><div class="ttname"><a href="classmdi.html#a2ba67bae133b42db67080b54ab084ada">mdi::Close_All_Documents</a></div><div class="ttdeci">void Close_All_Documents()</div><div class="ttdoc">Закрыть все документы </div><div class="ttdef"><b>Definition:</b> mdi.cpp:138</div></div>
+<div class="ttc" id="utils_8h_html"><div class="ttname"><a href="utils_8h.html">utils.h</a></div><div class="ttdoc">Файл с дополнительными функциями. </div></div>
+<div class="ttc" id="class_logger_html_a133b07117fcd5c9eb0c811d7d4c60e52"><div class="ttname"><a href="class_logger.html#a133b07117fcd5c9eb0c811d7d4c60e52">Logger::Instance</a></div><div class="ttdeci">static Logger &amp; Instance()</div><div class="ttdoc">Ссылка на единственный экземпляр класса </div><div class="ttdef"><b>Definition:</b> utils.h:19</div></div>
+<div class="ttc" id="classmdi_html"><div class="ttname"><a href="classmdi.html">mdi</a></div><div class="ttdoc">Multi document interface класс синглтон </div><div class="ttdef"><b>Definition:</b> mdi.h:18</div></div>
+<div class="ttc" id="classmdi_html_a87ccf5236251151db6c0f29c264fdde1"><div class="ttname"><a href="classmdi.html#a87ccf5236251151db6c0f29c264fdde1">mdi::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">Инициализация mdi. </div><div class="ttdef"><b>Definition:</b> mdi.h:27</div></div>
+<div class="ttc" id="class_logger_html_ab4c4d86279176eb0ede726bc5b4d5ddb"><div class="ttname"><a href="class_logger.html#ab4c4d86279176eb0ede726bc5b4d5ddb">Logger::info</a></div><div class="ttdeci">void info(const std::string &amp;message)</div><div class="ttdoc">функция вывода информации </div><div class="ttdef"><b>Definition:</b> utils.h:25</div></div>
+<div class="ttc" id="document_8h_html"><div class="ttname"><a href="document_8h.html">document.h</a></div><div class="ttdoc">Файл для работы с содержимым документа </div></div>
+<div class="ttc" id="classmdi_html_ae3488f3990982f1411a29e733536fc91"><div class="ttname"><a href="classmdi.html#ae3488f3990982f1411a29e733536fc91">mdi::documents</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; Document &gt; &gt; documents</div><div class="ttdoc">Вектор доументов, открытых редакторе </div><div class="ttdef"><b>Definition:</b> mdi.h:83</div></div>
+<div class="ttc" id="classmdi_html_a322abd1528a0101d5eea731a561865fb"><div class="ttname"><a href="classmdi.html#a322abd1528a0101d5eea731a561865fb">mdi::Export_Active_Document</a></div><div class="ttdeci">void Export_Active_Document()</div><div class="ttdoc">Экспорт в документ формат другого графического редактора </div><div class="ttdef"><b>Definition:</b> mdi.cpp:114</div></div>
+<div class="ttc" id="classmdi_html_aa9a57879a5ecfcfba470c593522ad64d"><div class="ttname"><a href="classmdi.html#aa9a57879a5ecfcfba470c593522ad64d">mdi::Close_Active_Document</a></div><div class="ttdeci">void Close_Active_Document()</div><div class="ttdoc">Закрыть активный документ </div><div class="ttdef"><b>Definition:</b> mdi.cpp:122</div></div>
+<div class="ttc" id="dispatch__message_8h_html"><div class="ttname"><a href="dispatch__message_8h.html">dispatch_message.h</a></div><div class="ttdoc">Класс содержит перечисление типов событий очереди обработчика событий. </div></div>
+<div class="ttc" id="classmdi_html_a97dbacae0d3aae15dc5a4d8a24b6f294"><div class="ttname"><a href="classmdi.html#a97dbacae0d3aae15dc5a4d8a24b6f294">mdi::find_document_by_id</a></div><div class="ttdeci">std::shared_ptr&lt; Document &gt; find_document_by_id(const size_t &amp;)</div><div class="ttdoc">Найти документ по его id. </div><div class="ttdef"><b>Definition:</b> mdi.cpp:88</div></div>
+<div class="ttc" id="dispatch__message_8h_html_a4f09127c805cc1f5ee20e67db7b45efa"><div class="ttname"><a href="dispatch__message_8h.html#a4f09127c805cc1f5ee20e67db7b45efa">Message</a></div><div class="ttdeci">Message</div><div class="ttdoc">Типы событий </div><div class="ttdef"><b>Definition:</b> dispatch_message.h:9</div></div>
+<div class="ttc" id="classmdi_html_a94e9072c40842d832526257500a2d693"><div class="ttname"><a href="classmdi.html#a94e9072c40842d832526257500a2d693">mdi::Import_Document</a></div><div class="ttdeci">void Import_Document()</div><div class="ttdoc">Импорт документа другого формата </div><div class="ttdef"><b>Definition:</b> mdi.cpp:100</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

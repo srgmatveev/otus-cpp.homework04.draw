@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>draw: Исходный файл src/document.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">draw
+   &#160;<span id="projectnumber">версия =  0.0.14</span>
+   </div>
+   <div id="projectbrief">Otus C++ проект разработки прототипа векторного редактора.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">document.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="document_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_shapes_8h.html">Shapes.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_document.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_document.html">Document</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_document.html#acdbcbe550084e8c20f4f67eb229ad66a">Document</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_document.html#ad569c16e3498944f274586d39c278725">   26</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">size_t</span> <a class="code" href="class_document.html#ad569c16e3498944f274586d39c278725">set_id</a>() { <span class="keywordflow">return</span> ++<a class="code" href="class_document.html#a913e35c96181ce1285d3125c8fcbe944">Document::counter</a>; }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_document.html#ac4cdd6e5c915c3e25a8c4b1fef073b7c">   29</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="class_document.html#ac4cdd6e5c915c3e25a8c4b1fef073b7c">get_id</a>() { <span class="keywordflow">return</span> <a class="code" href="class_document.html#ad9cc495d25eda7bd3ebefb03964709e3">_document_id</a>; }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_document.html#ab2825fa93647a870e05324e1c18ff772">   32</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_document.html#ab2825fa93647a870e05324e1c18ff772">set_file_name</a>(<span class="keyword">const</span> std::string &amp;name) { <a class="code" href="class_document.html#ad877b6fb4f5ee7354acabdf4b78ef4c9">_file_name</a> = name; }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_document.html#a7b5b1eb14c065022d58b3ee2f08fcc2a">   35</a></span>&#160;    std::string &amp;<a class="code" href="class_document.html#a7b5b1eb14c065022d58b3ee2f08fcc2a">get_file_name</a>() { <span class="keywordflow">return</span> <a class="code" href="class_document.html#ad877b6fb4f5ee7354acabdf4b78ef4c9">_file_name</a>; }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_document.html#aa428ac31ac13e78842851d1e2e2030fb">Create_IShape</a>(std::shared_ptr&lt;IShape&gt;);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_document.html#a81d9286a2b136214706e19e761fd7608">Delete_Selected_IShape</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_document.html#ad9cc495d25eda7bd3ebefb03964709e3">   45</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="class_document.html#ad9cc495d25eda7bd3ebefb03964709e3">_document_id</a>{0};</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_document.html#a913e35c96181ce1285d3125c8fcbe944">   47</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">size_t</span> <a class="code" href="class_document.html#a913e35c96181ce1285d3125c8fcbe944">counter</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_document.html#ad877b6fb4f5ee7354acabdf4b78ef4c9">   49</a></span>&#160;    std::string <a class="code" href="class_document.html#ad877b6fb4f5ee7354acabdf4b78ef4c9">_file_name</a>{};</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_document.html#a2e6863fe508cff2eb1c292797f9665e6">   51</a></span>&#160;    std::vector&lt;std::shared_ptr&lt;IShape&gt;&gt; <a class="code" href="class_document.html#a2e6863fe508cff2eb1c292797f9665e6">Elements</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classdoc_factory.html">   65</a></span>&#160;<span class="keyword">class </span><a class="code" href="classdoc_factory.html">docFactory</a> {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classdoc_factory.html#a1715285d211ac4072d6e9a8f4d9f17ee">   68</a></span>&#160;    <span class="keyword">static</span> std::shared_ptr&lt;Document&gt; <a class="code" href="classdoc_factory.html#a1715285d211ac4072d6e9a8f4d9f17ee">Create</a>() {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> std::make_shared&lt;Document&gt;();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="ttc" id="class_document_html_ab2825fa93647a870e05324e1c18ff772"><div class="ttname"><a href="class_document.html#ab2825fa93647a870e05324e1c18ff772">Document::set_file_name</a></div><div class="ttdeci">void set_file_name(const std::string &amp;name)</div><div class="ttdoc">Устанавливает имя документа </div><div class="ttdef"><b>Definition:</b> document.h:32</div></div>
+<div class="ttc" id="class_document_html"><div class="ttname"><a href="class_document.html">Document</a></div><div class="ttdoc">Класс, содержащий функции для работы с документом и хранящий графические объекты </div><div class="ttdef"><b>Definition:</b> document.h:20</div></div>
+<div class="ttc" id="class_document_html_a913e35c96181ce1285d3125c8fcbe944"><div class="ttname"><a href="class_document.html#a913e35c96181ce1285d3125c8fcbe944">Document::counter</a></div><div class="ttdeci">static size_t counter</div><div class="ttdoc">Статический счетчик документов </div><div class="ttdef"><b>Definition:</b> document.h:47</div></div>
+<div class="ttc" id="class_document_html_a81d9286a2b136214706e19e761fd7608"><div class="ttname"><a href="class_document.html#a81d9286a2b136214706e19e761fd7608">Document::Delete_Selected_IShape</a></div><div class="ttdeci">void Delete_Selected_IShape()</div><div class="ttdoc">Удалить выделенный графический примитив </div><div class="ttdef"><b>Definition:</b> document.cpp:19</div></div>
+<div class="ttc" id="class_document_html_a2e6863fe508cff2eb1c292797f9665e6"><div class="ttname"><a href="class_document.html#a2e6863fe508cff2eb1c292797f9665e6">Document::Elements</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; IShape &gt; &gt; Elements</div><div class="ttdoc">Вектор указателей на графические примитивы </div><div class="ttdef"><b>Definition:</b> document.h:51</div></div>
+<div class="ttc" id="class_document_html_ad9cc495d25eda7bd3ebefb03964709e3"><div class="ttname"><a href="class_document.html#ad9cc495d25eda7bd3ebefb03964709e3">Document::_document_id</a></div><div class="ttdeci">size_t _document_id</div><div class="ttdoc">Номер документа </div><div class="ttdef"><b>Definition:</b> document.h:45</div></div>
+<div class="ttc" id="_shapes_8h_html"><div class="ttname"><a href="_shapes_8h.html">Shapes.h</a></div><div class="ttdoc">Файл описания графических объектов </div></div>
+<div class="ttc" id="class_document_html_acdbcbe550084e8c20f4f67eb229ad66a"><div class="ttname"><a href="class_document.html#acdbcbe550084e8c20f4f67eb229ad66a">Document::Document</a></div><div class="ttdeci">Document()</div><div class="ttdoc">Конструктор по умолчанию </div><div class="ttdef"><b>Definition:</b> document.cpp:7</div></div>
+<div class="ttc" id="classdoc_factory_html_a1715285d211ac4072d6e9a8f4d9f17ee"><div class="ttname"><a href="classdoc_factory.html#a1715285d211ac4072d6e9a8f4d9f17ee">docFactory::Create</a></div><div class="ttdeci">static std::shared_ptr&lt; Document &gt; Create()</div><div class="ttdoc">Создать новый документ </div><div class="ttdef"><b>Definition:</b> document.h:68</div></div>
+<div class="ttc" id="class_document_html_ad877b6fb4f5ee7354acabdf4b78ef4c9"><div class="ttname"><a href="class_document.html#ad877b6fb4f5ee7354acabdf4b78ef4c9">Document::_file_name</a></div><div class="ttdeci">std::string _file_name</div><div class="ttdoc">Имя документа </div><div class="ttdef"><b>Definition:</b> document.h:49</div></div>
+<div class="ttc" id="class_document_html_aa428ac31ac13e78842851d1e2e2030fb"><div class="ttname"><a href="class_document.html#aa428ac31ac13e78842851d1e2e2030fb">Document::Create_IShape</a></div><div class="ttdeci">void Create_IShape(std::shared_ptr&lt; IShape &gt;)</div><div class="ttdoc">Создать графический примитив </div><div class="ttdef"><b>Definition:</b> document.cpp:14</div></div>
+<div class="ttc" id="class_document_html_ad569c16e3498944f274586d39c278725"><div class="ttname"><a href="class_document.html#ad569c16e3498944f274586d39c278725">Document::set_id</a></div><div class="ttdeci">static size_t set_id()</div><div class="ttdoc">Устанавливает номер документа в Multi_Document_Interface. </div><div class="ttdef"><b>Definition:</b> document.h:26</div></div>
+<div class="ttc" id="class_document_html_ac4cdd6e5c915c3e25a8c4b1fef073b7c"><div class="ttname"><a href="class_document.html#ac4cdd6e5c915c3e25a8c4b1fef073b7c">Document::get_id</a></div><div class="ttdeci">size_t get_id()</div><div class="ttdoc">Получить номер документа в Multi_Document_Interface. </div><div class="ttdef"><b>Definition:</b> document.h:29</div></div>
+<div class="ttc" id="classdoc_factory_html"><div class="ttname"><a href="classdoc_factory.html">docFactory</a></div><div class="ttdoc">Фабрика документов </div><div class="ttdef"><b>Definition:</b> document.h:65</div></div>
+<div class="ttc" id="class_document_html_a7b5b1eb14c065022d58b3ee2f08fcc2a"><div class="ttname"><a href="class_document.html#a7b5b1eb14c065022d58b3ee2f08fcc2a">Document::get_file_name</a></div><div class="ttdeci">std::string &amp; get_file_name()</div><div class="ttdoc">Получить имя документа </div><div class="ttdef"><b>Definition:</b> document.h:35</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

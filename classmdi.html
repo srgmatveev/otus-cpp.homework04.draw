@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>draw: Класс mdi</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">draw
+   &#160;<span id="projectnumber">версия =  0.0.14</span>
+   </div>
+   <div id="projectbrief">Otus C++ проект разработки прототипа векторного редактора.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="classmdi-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс mdi</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Multi document interface класс синглтон  
+ <a href="classmdi.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mdi_8h_source.html">mdi.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a87ccf5236251151db6c0f29c264fdde1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87ccf5236251151db6c0f29c264fdde1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmdi.html#a87ccf5236251151db6c0f29c264fdde1">init</a> ()</td></tr>
+<tr class="memdesc:a87ccf5236251151db6c0f29c264fdde1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация mdi. <br/></td></tr>
+<tr class="separator:a87ccf5236251151db6c0f29c264fdde1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13585c878d33c005ed5340eea361639f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmdi.html#a13585c878d33c005ed5340eea361639f">Dispatcher</a> (<a class="el" href="dispatch__message_8h.html#a4f09127c805cc1f5ee20e67db7b45efa">Message</a>)</td></tr>
+<tr class="memdesc:a13585c878d33c005ed5340eea361639f"><td class="mdescLeft">&#160;</td><td class="mdescRight">MDI контроллер  <a href="#a13585c878d33c005ed5340eea361639f">Подробнее...</a><br/></td></tr>
+<tr class="separator:a13585c878d33c005ed5340eea361639f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97dbacae0d3aae15dc5a4d8a24b6f294"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_document.html">Document</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmdi.html#a97dbacae0d3aae15dc5a4d8a24b6f294">find_document_by_id</a> (const size_t &amp;)</td></tr>
+<tr class="memdesc:a97dbacae0d3aae15dc5a4d8a24b6f294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти документ по его id.  <a href="#a97dbacae0d3aae15dc5a4d8a24b6f294">Подробнее...</a><br/></td></tr>
+<tr class="separator:a97dbacae0d3aae15dc5a4d8a24b6f294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94e9072c40842d832526257500a2d693"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94e9072c40842d832526257500a2d693"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmdi.html#a94e9072c40842d832526257500a2d693">Import_Document</a> ()</td></tr>
+<tr class="memdesc:a94e9072c40842d832526257500a2d693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Импорт документа другого формата <br/></td></tr>
+<tr class="separator:a94e9072c40842d832526257500a2d693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a322abd1528a0101d5eea731a561865fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a322abd1528a0101d5eea731a561865fb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmdi.html#a322abd1528a0101d5eea731a561865fb">Export_Active_Document</a> ()</td></tr>
+<tr class="memdesc:a322abd1528a0101d5eea731a561865fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Экспорт в документ формат другого графического редактора <br/></td></tr>
+<tr class="separator:a322abd1528a0101d5eea731a561865fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a57879a5ecfcfba470c593522ad64d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9a57879a5ecfcfba470c593522ad64d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmdi.html#aa9a57879a5ecfcfba470c593522ad64d">Close_Active_Document</a> ()</td></tr>
+<tr class="memdesc:aa9a57879a5ecfcfba470c593522ad64d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Закрыть активный документ <br/></td></tr>
+<tr class="separator:aa9a57879a5ecfcfba470c593522ad64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ba67bae133b42db67080b54ab084ada"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ba67bae133b42db67080b54ab084ada"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmdi.html#a2ba67bae133b42db67080b54ab084ada">Close_All_Documents</a> ()</td></tr>
+<tr class="memdesc:a2ba67bae133b42db67080b54ab084ada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Закрыть все документы <br/></td></tr>
+<tr class="separator:a2ba67bae133b42db67080b54ab084ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2da889594cd3a15c4c58ea295a35b42"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2da889594cd3a15c4c58ea295a35b42"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmdi.html#ac2da889594cd3a15c4c58ea295a35b42">Save_All_Documents</a> ()</td></tr>
+<tr class="memdesc:ac2da889594cd3a15c4c58ea295a35b42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сохранить все документы <br/></td></tr>
+<tr class="separator:ac2da889594cd3a15c4c58ea295a35b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52116908c0ec3d01fbea7af77768b1c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52116908c0ec3d01fbea7af77768b1c9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmdi.html#a52116908c0ec3d01fbea7af77768b1c9">Open_Document</a> ()</td></tr>
+<tr class="memdesc:a52116908c0ec3d01fbea7af77768b1c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загрузить документ <br/></td></tr>
+<tr class="separator:a52116908c0ec3d01fbea7af77768b1c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:afb050755442efacc1269faba13225560"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb050755442efacc1269faba13225560"></a>
+static <a class="el" href="classmdi.html">mdi</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmdi.html#afb050755442efacc1269faba13225560">instance</a> ()</td></tr>
+<tr class="memdesc:afb050755442efacc1269faba13225560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ссылка на единственный метод класса <br/></td></tr>
+<tr class="separator:afb050755442efacc1269faba13225560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a038044d93cefd6758257b5784053c7ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a038044d93cefd6758257b5784053c7ff"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmdi.html#a038044d93cefd6758257b5784053c7ff">mdi</a> ()=default</td></tr>
+<tr class="memdesc:a038044d93cefd6758257b5784053c7ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пустой конструктор по умолчанию <br/></td></tr>
+<tr class="separator:a038044d93cefd6758257b5784053c7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3487425e3a6c2dd15f28c379b22d530d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3487425e3a6c2dd15f28c379b22d530d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>mdi</b> (const <a class="el" href="classmdi.html">mdi</a> &amp;)=delete</td></tr>
+<tr class="separator:a3487425e3a6c2dd15f28c379b22d530d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d7f970d17d2ac56f5512a42306b8eab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d7f970d17d2ac56f5512a42306b8eab"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>mdi</b> (<a class="el" href="classmdi.html">mdi</a> &amp;&amp;rhs)=delete</td></tr>
+<tr class="separator:a1d7f970d17d2ac56f5512a42306b8eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab3810304ae0ebdeed0edab620d71d40"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab3810304ae0ebdeed0edab620d71d40"></a>
+<a class="el" href="classmdi.html">mdi</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classmdi.html">mdi</a> &amp;)=delete</td></tr>
+<tr class="separator:aab3810304ae0ebdeed0edab620d71d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:ae3620f0f57b8f802b4a41736321008b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3620f0f57b8f802b4a41736321008b7"></a>
+std::shared_ptr&lt; <a class="el" href="class_document.html">Document</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmdi.html#ae3620f0f57b8f802b4a41736321008b7">Active_Document</a> {nullptr}</td></tr>
+<tr class="memdesc:ae3620f0f57b8f802b4a41736321008b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уазатель на докумен, который находится в фокусе <br/></td></tr>
+<tr class="separator:ae3620f0f57b8f802b4a41736321008b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3488f3990982f1411a29e733536fc91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3488f3990982f1411a29e733536fc91"></a>
+std::vector&lt; std::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_document.html">Document</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmdi.html#ae3488f3990982f1411a29e733536fc91">documents</a></td></tr>
+<tr class="memdesc:ae3488f3990982f1411a29e733536fc91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор доументов, открытых редакторе <br/></td></tr>
+<tr class="separator:ae3488f3990982f1411a29e733536fc91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Multi document interface класс синглтон </p>
+</div><h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a13585c878d33c005ed5340eea361639f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mdi::Dispatcher </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dispatch__message_8h.html#a4f09127c805cc1f5ee20e67db7b45efa">Message</a>&#160;</td>
+          <td class="paramname"><em>_message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MDI контроллер </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_message</td><td>- тип сообщения </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a97dbacae0d3aae15dc5a4d8a24b6f294"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_document.html">Document</a> &gt; mdi::find_document_by_id </td>
+          <td>(</td>
+          <td class="paramtype">const size_t &amp;&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Найти документ по его id. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>- уникальный идентификатор документа </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>std::shared_ptr&lt;Document&gt; - указатель на документ </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/<a class="el" href="mdi_8h_source.html">mdi.h</a></li>
+<li>src/<a class="el" href="mdi_8cpp.html">mdi.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>draw: Файл src/dispatch_message.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">draw
+   &#160;<span id="projectnumber">версия =  0.0.14</span>
+   </div>
+   <div id="projectbrief">Otus C++ проект разработки прототипа векторного редактора.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Перечисления</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл dispatch_message.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс содержит перечисление типов событий очереди обработчика событий.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="dispatch__message_8h__dep__incl.png" border="0" usemap="#src_2dispatch__message_8hdep" alt=""/></div>
+<map name="src_2dispatch__message_8hdep" id="src_2dispatch__message_8hdep">
+<area shape="rect" id="node2" href="mdi_8h.html" title="Multi document interface класс " alt="" coords="58,80,133,107"/><area shape="rect" id="node3" href="app_8h.html" title="Класс работы с приложением " alt="" coords="5,155,80,181"/><area shape="rect" id="node4" href="mdi_8cpp.html" title="Реализация Multi document interface методов " alt="" coords="105,155,196,181"/></map>
+</div>
+</div>
+<p><a href="dispatch__message_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:a4f09127c805cc1f5ee20e67db7b45efa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dispatch__message_8h.html#a4f09127c805cc1f5ee20e67db7b45efa">Message</a> { <br/>
+&#160;&#160;<a class="el" href="dispatch__message_8h.html#a4f09127c805cc1f5ee20e67db7b45efaaab840c5992ba43993862a5f40cda9d3a">Message::New_Document</a>, 
+<a class="el" href="dispatch__message_8h.html#a4f09127c805cc1f5ee20e67db7b45efaa2873fe62329d20853e6369b07b37d24c">Message::Open_Document</a>, 
+<a class="el" href="dispatch__message_8h.html#a4f09127c805cc1f5ee20e67db7b45efaaf0fa14483732ac4304873f2af1ba4fc9">Message::Set_Active_Document</a>, 
+<a class="el" href="dispatch__message_8h.html#a4f09127c805cc1f5ee20e67db7b45efaaa5a3d50fc4c21c9964d6eae69f7d4426">Message::Close_Document</a>, 
+<br/>
+&#160;&#160;<a class="el" href="dispatch__message_8h.html#a4f09127c805cc1f5ee20e67db7b45efaaecd39769142a0d610ef43d90d2ab2005">Message::Close_All_Documents</a>, 
+<a class="el" href="dispatch__message_8h.html#a4f09127c805cc1f5ee20e67db7b45efaad8e69d412f8f16170622ec3b92d35ecf">Message::Save_Document</a>, 
+<a class="el" href="dispatch__message_8h.html#a4f09127c805cc1f5ee20e67db7b45efaa0fee2bc1d88ce4a512a2802d4518d150">Message::Save_All_Documents</a>, 
+<a class="el" href="dispatch__message_8h.html#a4f09127c805cc1f5ee20e67db7b45efaabf5b7b23d08a53bca3fcfb34cec58454">Message::Import_From_File</a>, 
+<br/>
+&#160;&#160;<a class="el" href="dispatch__message_8h.html#a4f09127c805cc1f5ee20e67db7b45efaa4cd7136ca8bdf475f2166b174669ef83">Message::Export_to_File</a>, 
+<a class="el" href="dispatch__message_8h.html#a4f09127c805cc1f5ee20e67db7b45efaaffcaa643b493573ec6a0a6afe59c37b8">Message::DrawLine</a>, 
+<a class="el" href="dispatch__message_8h.html#a4f09127c805cc1f5ee20e67db7b45efaad16cd327e87c90a5be1c18f4747bc0fb">Message::DrawCircle</a>, 
+<a class="el" href="dispatch__message_8h.html#a4f09127c805cc1f5ee20e67db7b45efaad128187cf2e53899b703beb28921a08e">Message::DrawRectangle</a>, 
+<br/>
+&#160;&#160;<a class="el" href="dispatch__message_8h.html#a4f09127c805cc1f5ee20e67db7b45efaaecec75b36f3a690474977d1f4b5e95a1">Message::DrawSquare</a>, 
+<a class="el" href="dispatch__message_8h.html#a4f09127c805cc1f5ee20e67db7b45efaa8b963bd14995111ef1c2ae82be745750">Message::DeleteSelected</a>
+<br/>
+ }</td></tr>
+<tr class="memdesc:a4f09127c805cc1f5ee20e67db7b45efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Типы событий  <a href="dispatch__message_8h.html#a4f09127c805cc1f5ee20e67db7b45efa">Подробнее...</a><br/></td></tr>
+<tr class="separator:a4f09127c805cc1f5ee20e67db7b45efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс содержит перечисление типов событий очереди обработчика событий. </p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a class="anchor" id="a4f09127c805cc1f5ee20e67db7b45efa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="dispatch__message_8h.html#a4f09127c805cc1f5ee20e67db7b45efa">Message</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Типы событий </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a4f09127c805cc1f5ee20e67db7b45efaaab840c5992ba43993862a5f40cda9d3a"></a>New_Document</em>&#160;</td><td class="fielddoc">
+<p>Создать новый документ </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a4f09127c805cc1f5ee20e67db7b45efaa2873fe62329d20853e6369b07b37d24c"></a>Open_Document</em>&#160;</td><td class="fielddoc">
+<p>Открыть существующий документ </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a4f09127c805cc1f5ee20e67db7b45efaaf0fa14483732ac4304873f2af1ba4fc9"></a>Set_Active_Document</em>&#160;</td><td class="fielddoc">
+<p>Сделать документ активным (с которым идет работа) </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a4f09127c805cc1f5ee20e67db7b45efaaa5a3d50fc4c21c9964d6eae69f7d4426"></a>Close_Document</em>&#160;</td><td class="fielddoc">
+<p>Закрыть активный документ </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a4f09127c805cc1f5ee20e67db7b45efaaecd39769142a0d610ef43d90d2ab2005"></a>Close_All_Documents</em>&#160;</td><td class="fielddoc">
+<p>Закрыть все документы </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a4f09127c805cc1f5ee20e67db7b45efaad8e69d412f8f16170622ec3b92d35ecf"></a>Save_Document</em>&#160;</td><td class="fielddoc">
+<p>Сохранить активный документ </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a4f09127c805cc1f5ee20e67db7b45efaa0fee2bc1d88ce4a512a2802d4518d150"></a>Save_All_Documents</em>&#160;</td><td class="fielddoc">
+<p>Сохранить все документы </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a4f09127c805cc1f5ee20e67db7b45efaabf5b7b23d08a53bca3fcfb34cec58454"></a>Import_From_File</em>&#160;</td><td class="fielddoc">
+<p>Импоритровать из формата другого редактора в новый документ </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a4f09127c805cc1f5ee20e67db7b45efaa4cd7136ca8bdf475f2166b174669ef83"></a>Export_to_File</em>&#160;</td><td class="fielddoc">
+<p>Экспортировать в формат другого редактора </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a4f09127c805cc1f5ee20e67db7b45efaaffcaa643b493573ec6a0a6afe59c37b8"></a>DrawLine</em>&#160;</td><td class="fielddoc">
+<p>Нарисовать линию </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a4f09127c805cc1f5ee20e67db7b45efaad16cd327e87c90a5be1c18f4747bc0fb"></a>DrawCircle</em>&#160;</td><td class="fielddoc">
+<p>Нарисовать окружность. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a4f09127c805cc1f5ee20e67db7b45efaad128187cf2e53899b703beb28921a08e"></a>DrawRectangle</em>&#160;</td><td class="fielddoc">
+<p>Нарисовать прямоугольник </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a4f09127c805cc1f5ee20e67db7b45efaaecec75b36f3a690474977d1f4b5e95a1"></a>DrawSquare</em>&#160;</td><td class="fielddoc">
+<p>Нарисовать квадрат </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a4f09127c805cc1f5ee20e67db7b45efaa8b963bd14995111ef1c2ae82be745750"></a>DeleteSelected</em>&#160;</td><td class="fielddoc">
+<p>Удалить выделенный графический элемент </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>
